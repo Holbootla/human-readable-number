@@ -45,7 +45,7 @@ module.exports = function toReadable (number) {
 	}
 
 	if (number < 1000) {
-		const hundredsString = numberList[`${numberArray[0]}`] + ' ' + 'hundred'
+		const hundredsString = `${numberList[`${numberArray[0]}`]} hundred`
 		const numberArrayDecimal = numberArray.slice(-2)
 		const numberDecimal = +(numberArrayDecimal.join(''))
 		let decimalsString = decimalToString(numberDecimal, numberArrayDecimal)
